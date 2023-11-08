@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.7">
+    <world name='test_world'>
+        <physics name="lms" type="ignored">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="libignition-gazebo-user-commands-system.so"
+            name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="libignition-gazebo-scene-broadcaster-system.so"
+            name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+        <gui fullscreen="0">
+            <plugin filename="GzScene3D" name="3D View">
+                <ignition-gui>
+                    <title>3D view</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="string" key="state">docked</property>
+                </ignition-gui>
+
+                <engine>ogre2</engine>
+                <scene>scene</scene>
+                <ambient_light>0.4 0.4 0.4</ambient_light>
+                <background_color>0.8 0.8 0.8</background_color>
+            </plugin>
+
+            <plugin
+                filename="WorldControl" name="World Control">
+                <ignition-gui>
+                    <title>World Control</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="bool" key="resizable">false</property>
+                    <property type="double" key="height">72</property>
+                    <property type="double" key="width">121</property>
+                    <property type="double" key="z">1</property>
+
+                    <property type="string" key="state">floating</property>
+                    <anchors target="3D view">
+                        <line own="left" target="left"/>
+                        <line own="bottom" target="bottom"/>
+                    </anchors>
+                </ignition-gui>
+
+                <play_pause>true</play_pause>
+                <step>true</step>
+                <start_paused>true</start_paused>
+                <service>/world/world_demo/control</service>
+                <stats_topic>/world/world_demo/stats</stats_topic>
+            </plugin>
+
+            <plugin filename="WorldStats" name="World Stats">
+                <ignition-gui>
+                    <title>World Stats</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="bool" key="resizable">false</property>
+                    <property type="double" key="height">110</property>
+                    <property type="double" key="width">290</property>
+                    <property type="double" key="z">1</property>
+
+                    <property type="string" key="state">floating</property>
+                    <anchors target="3D View">
+                        <line own="right" target="right" />
+                        <line own="bottom" target="bottom" />
+                    </anchors>
+                </ignition-gui>
+
+                <sim_time>true</sim_time>
+                <real_time>true</real_time>
+                <real_time_factor>true</real_time_factor>
+                <iterations>true</iterations>
+                <topic>/world/world_demo/stats</topic>
+            </plugin>
+
+            <plugin filename="EntityTree" name="Entity Tree"></plugin>
+        </gui>
+
+        <light type="directional" name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>0.5 0.1 -0.9</direction>
+        </light>
+
+        <include>
+            <uri>model://pioneer2dx</uri>
+        </include>
+        
+        <!-- Plugin de controle de robô com duas rodas independentes e um caster -->
+        <!-- <plugin
+            filename="libignition-gazebo-diff-drive-system.so"
+            name="ignition::gazebo::systems::DiffDrive">
+            <left_joint>left_wheel_joint</left_joint>
+            <right_joint>right_wheel_joint</right_joint>
+            <wheel_separation>0.34</wheel_separation>
+            <wheel_radius>0.11</wheel_radius>
+            <odom_publish_frequency>1</odom_publish_frequency>
+            <topic>cmd_vel</topic>
+        </plugin> -->
+
+
+    </world>
+</sdf>
