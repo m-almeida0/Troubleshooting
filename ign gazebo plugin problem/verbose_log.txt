@@ -1,0 +1,111 @@
+[Msg] Ignition Gazebo GUI    v6.15.0
+[Dbg] [gz.cc:161] Subscribing to [/gazebo/starting_world].
+[Dbg] [gz.cc:163] Waiting for a world to be set from the GUI...
+[Dbg] [Gui.cc:253] Waiting for subscribers to [/gazebo/starting_world]...
+[Msg] Received world [test_world.sdf] from the GUI.
+[Dbg] [gz.cc:167] Unsubscribing from [/gazebo/starting_world].
+[Msg] Ignition Gazebo Server v6.15.0
+[Msg] Loading SDF world file[/home/marcos/WR/learn_ign/test_world.sdf].
+[Dbg] [Application.cc:92] Initializing application.
+[GUI] [Dbg] [Application.cc:555] Create main window
+[Msg] Serving entity system service on [/entity/system/add]
+[Msg] Create service on [/world/test_world/create]
+[Msg] Remove service on [/world/test_world/remove]
+[Msg] Pose service on [/world/test_world/set_pose]
+[Msg] Pose service on [/world/test_world/set_pose_vector]
+[Msg] Light configuration service on [/world/test_world/light_config]
+[Msg] Physics service on [/world/test_world/set_physics]
+[Msg] SphericalCoordinates service on [/world/test_world/set_spherical_coordinates]
+[Msg] Enable collision service on [/world/test_world/enable_collision]
+[Msg] Disable collision service on [/world/test_world/disable_collision]
+[Msg] Material service on [/world/test_world/visual_config]
+[Msg] Material service on [/world/test_world/wheel_slip]
+[Dbg] [SystemManager.cc:70] Loaded system [ignition::gazebo::systems::UserCommands] for entity [1]
+[Dbg] [SystemManager.cc:70] Loaded system [ignition::gazebo::systems::SceneBroadcaster] for entity [1]
+[Msg] DiffDrive subscribing to twist messages on [cmd_vel]
+[Dbg] [SystemManager.cc:70] Loaded system [ignition::gazebo::systems::DiffDrive] for entity [4]
+[Msg] Loaded level [3]
+[Msg] Serving world controls on [/world/test_world/control], [/world/test_world/control/state] and [/world/test_world/playback/control]
+[Msg] Serving GUI information on [/world/test_world/gui/info]
+[Msg] World [test_world] initialized with [lms] physics profile.
+[Msg] Serving world SDF generation service on [/world/test_world/generate_world_sdf]
+[Msg] Serving world names on [/gazebo/worlds]
+[Msg] Resource path add service on [/gazebo/resource_paths/add].
+[Msg] Resource path get service on [/gazebo/resource_paths/get].
+[Msg] Resource path resolve service on [/gazebo/resource_paths/resolve].
+[Msg] Resource paths published on [/gazebo/resource_paths].
+[Msg] Server control service on [/server_control].
+[GUI] [Wrn] [Application.cc:797] [QT] qrc:/qml/StyleDialog.qml:112:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Wrn] [Application.cc:797] [QT] qrc:/qml/StyleDialog.qml:105:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Wrn] [Application.cc:797] [QT] qrc:/qml/StyleDialog.qml:98:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Wrn] [Application.cc:797] [QT] qrc:qml/Main.qml:102:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Wrn] [Application.cc:797] [QT] qrc:/qml/PluginMenu.qml:27:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Dbg] [PathManager.cc:66] Requesting resource paths through [/gazebo/resource_paths/get]
+[GUI] [Wrn] [Application.cc:797] [QT] file::/Gazebo/GazeboDrawer.qml:242:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Dbg] [Gui.cc:333] GUI requesting list of world names. The server may be busy downloading resources. Please be patient.
+[GUI] [Dbg] [PathManager.cc:55] Received resource paths.
+[GUI] [Dbg] [Gui.cc:391] Requesting GUI from [/world/test_world/gui/info]...
+[GUI] [Dbg] [GuiRunner.cc:145] Requesting initial state from [/world/test_world/state]...
+[GUI] [Dbg] [Application.cc:426] Loading plugin [GzScene3D]
+[GUI] [Wrn] [Scene3D.cc:2941] The GzScene3D plugin is deprecated on v6 and will be removed on v7. Use MinimalScene together with other plugins as needed.
+[GUI] [Msg] Video recorder stats topic advertised on [/gui/record_video/stats]
+[GUI] [Wrn] [Application.cc:797] [QT] file::/GzScene3D/GzScene3D.qml:108:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Wrn] [Application.cc:797] [QT] file::/GzScene3D/GzScene3D.qml:63:5: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Msg] Transform mode service on [/gui/transform_mode]
+[GUI] [Msg] Record video service on [/gui/record_video]
+[GUI] [Msg] Move to service on [/gui/move_to]
+[GUI] [Msg] Follow service on [/gui/follow]
+[GUI] [Msg] Follow offset service on [/gui/follow/offset]
+[GUI] [Msg] View angle service on [/gui/view_angle]
+[GUI] [Msg] Move to pose service on [/gui/move_to/pose]
+[GUI] [Msg] Camera pose topic advertised on [/gui/camera/pose]
+[GUI] [Msg] View as transparent service on [/gui/view/transparent]
+[GUI] [Msg] View center of mass service on [/gui/view/com]
+[GUI] [Msg] View inertia service on [/gui/view/inertia]
+[GUI] [Msg] View joints service on [/gui/view/joints]
+[GUI] [Msg] View wireframes service on [/gui/view/wireframes]
+[GUI] [Msg] View collisions service on [/gui/view/collisions]
+[GUI] [Msg] Camera view controller topic advertised on [/gui/camera/view_control]
+[GUI] [Msg] Added plugin [3D view] to main window
+[GUI] [Msg] Loaded plugin [GzScene3D] from path [/usr/lib/x86_64-linux-gnu/ign-gazebo-6/plugins/gui/libGzScene3D.so]
+[GUI] [Dbg] [Application.cc:426] Loading plugin [WorldControl]
+[GUI] [Wrn] [Application.cc:797] [QT] file::/WorldControl/WorldControl.qml:30:3: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }
+[GUI] [Msg] Using world control service [/world/test_world/control]
+[GUI] [Msg] Listening to stats on [/world/test_world/stats]
+[GUI] [Dbg] [WorldControl.cc:248] Using a service to share WorldControl msgs with the server
+[GUI] [Msg] Added plugin [World Control] to main window
+[GUI] [Msg] Loaded plugin [WorldControl] from path [/usr/lib/x86_64-linux-gnu/ign-gui-6/plugins/libWorldControl.so]
+[GUI] [Dbg] [Application.cc:426] Loading plugin [WorldStats]
+[GUI] [Wrn] [WorldStats.cc:122] Ignoring topic [/world/world_demo/stats], world name different from [test_world]. Fix or remove your <topic> tag.
+[GUI] [Msg] Listening to stats on [/world/test_world/stats]
+[GUI] [Wrn] [Plugin.cc:561] Failed to find anchor target [3D View]
+[GUI] [Msg] Added plugin [World Stats] to main window
+[GUI] [Msg] Loaded plugin [WorldStats] from path [/usr/lib/x86_64-linux-gnu/ign-gui-6/plugins/libWorldStats.so]
+[GUI] [Dbg] [Application.cc:426] Loading plugin [EntityTree]
+[GUI] [Wrn] [Application.cc:797] [QT] file::/EntityTree/EntityTree.qml:148:7: QML ToolButton: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.
+[GUI] [Msg] Added plugin [Entity tree] to main window
+[GUI] [Msg] Loaded plugin [EntityTree] from path [/usr/lib/x86_64-linux-gnu/ign-gazebo-6/plugins/gui/libEntityTree.so]
+[GUI] [Wrn] [Application.cc:797] [QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"
+[GUI] [Msg] Loading plugin [ignition-rendering-ogre2]
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+[GUI] [Dbg] [RenderUtil.cc:2588] Create scene [scene]
+[GUI] [Wrn] [Ogre2Camera.cc:390] Ogre2Camera::SetVisibilityMask: Mask bits c0000000 are set but will be ignored as they conflict with the reserved bits used internally by the ogre2 backend.
+[Msg] Found no publishers on /stats, adding root stats topic
+[Msg] Found no publishers on /clock, adding root clock topic
+[Dbg] [SimulationRunner.cc:496] Creating PostUpdate worker threads: 3
+[Dbg] [SimulationRunner.cc:507] Creating postupdate worker thread (0)
+[Dbg] [SimulationRunner.cc:507] Creating postupdate worker thread (1)
+[Msg] Serving scene information on [/world/test_world/scene/info]
+[Msg] Serving graph information on [/world/test_world/scene/graph]
+[Msg] Serving full state on [/world/test_world/state]
+[Msg] Serving full state (async) on [/world/test_world/state_async]
+[Msg] Publishing scene information on [/world/test_world/scene/info]
+[Msg] Publishing entity deletions on [/world/test_world/scene/deletion]
+[Msg] Publishing state changes on [/world/test_world/state]
+[Msg] Publishing pose messages on [/world/test_world/pose/info]
+[Msg] Publishing dynamic pose messages on [/world/test_world/dynamic_pose/info]
+[Dbg] [EntityComponentManager.cc:1623] Updated state thread iterators: 16 threads processing around 2 entities each.
+[Wrn] [Component.hh:144] Trying to serialize component with data type [N3sdf3v125WorldE], which doesn't have `operator<<`. Component will not be serialized.
+[GUI] [Wrn] [Component.hh:189] Trying to deserialize component with data type [N3sdf3v125WorldE], which doesn't have `operator>>`. Component will not be deserialized.
+[GUI] [Dbg] [Scene3D.cc:3310] RenderEngineGuiPlugin component not found, render engine won't be set from the ECM 
