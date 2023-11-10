@@ -147,15 +147,13 @@
       </axis>
     </joint>
 
-    <plugin filename="libignition-gazebo-diff-drive-system"
-      name="ignition::gazebo::systems::DiffDrive">
+    <plugin filename="libignition-gazebo-diff-drive-system.so"
+      name="gz::sim::systems::DiffDrive">
       <left_joint>left_wheel_hinge</left_joint>
       <right_joint>right_wheel_hinge</right_joint>
-      <torque>5</torque>
       <wheel_separation>0.34</wheel_separation>
       <wheel_radius>0.11</wheel_radius>
       <odom_publish_frequency>1</odom_publish_frequency>
-      <topic>cmd_vel</topic>
     </plugin>
 
   </model>
